@@ -1,0 +1,18 @@
+Inicializando o projeto na pasta main (GO_BACKEND_APK)
+
+
+
+$ go mod init go-api
+
+go: creating new go.mod: module go-api
+go: to add module requirements and sums:
+        go mod tidy
+
+
+
+# Isso aqui embaixo é uma lib, a que vou startar o server. É onde tem os métodos GET, PUSH, ..., de API
+$ go get github.com/gin-gonic/gin
+----------------------------------------------------------------------------------------------------------
+/model : Vamos criar a estrutura que vai consumir o banco de dados. Perceba que é bem parecido como definimos no banco de dados.
+
+/controler : Vai receber a requisição
