@@ -19,10 +19,8 @@ func main() {
 
 	// Camada de repositório
 	ProductRepository := repository.NewProductRepository(dbConnection)
-
 	// Camada usecase
 	ProductUseCase := usecase.NewProductUseCase(ProductRepository)
-
 	// Camada de controllers
 	productController := controller.NewProductController(ProductUseCase)
 
